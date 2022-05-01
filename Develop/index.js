@@ -1,7 +1,10 @@
 // TODO: Include packages needed for this application
-
+const inquirer = require('inquirer');
 // TODO: Create an array of questions for user input
-const questions = [
+
+const promptUser = () => {
+    return inquirer.prompt(
+    [
     {
         type: 'input',
         name: 'title',
@@ -38,7 +41,8 @@ const questions = [
         message: 'Please choose the applicable licenses (check all that apply',
         choices: ['MIT', 'Academic Free License v3.0', 'Apache license 2.0']
     }
-];
+]);
+};
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}

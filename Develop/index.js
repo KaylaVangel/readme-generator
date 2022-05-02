@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 // console.log(inquirer);
 const promptUser = () => {
@@ -38,7 +39,7 @@ const promptUser = () => {
         type: 'checkbox',
         name: 'license',
         message: 'Please choose the applicable licenses (check all that apply',
-        choices: ['MIT', 'Academic Free License v3.0', 'Apache license 2.0']
+        choices: ['MIT', 'Microsoft Public License', 'ISC']
     }
 ]);
 };
@@ -58,7 +59,7 @@ function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {
-    promptUser().then(answers => console.log(answers));
+    promptUser().then(answers => generateMarkdown(answers));
 }
 
 // Function call to initialize app

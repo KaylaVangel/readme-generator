@@ -67,15 +67,19 @@ function generateMarkdown(data) {
 
   return `
   # ${data.title}
+  ${renderLicenseSection(data.license)}
   ## Decription:
   ${data.description}
-
-  ## ${data.instructions}
-  ## ${data.usage}
-  ${renderLicenseSection(data.license)}
-  ## ${data.contribution}
-  ## ${data.tests}
-  ## ${data.questions}`
+  ## Instructions:
+  ${data.instructions}
+  ## Usage:
+  ${data.usage}
+  ## Contribution:
+  ${data.contribution}
+  ##Tests: 
+  ${data.tests}
+  ##Questions??? 
+  ${data.questions}`
 };
 
 module.exports = generateMarkdown;

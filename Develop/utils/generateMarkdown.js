@@ -2,15 +2,15 @@
 // If there is no license, return an empty string
 const avalLicense = {
   MIT: {
-    Badge: "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]",
+    Badge: "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)",
     Link: "(https://opensource.org/licenses/MIT)"
   },
   MicrosoftPublicLicense: {
-    Badge: "![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]",
+    Badge: "![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)",
     Link: "(https://opensource.org/licenses/MPL-2.0)"
   },
   ISC: {
-    Badge: "![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)]",
+    Badge: "![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)",
     Link: "(https://opensource.org/licenses/ISC)"
   }
 }
@@ -69,7 +69,7 @@ function generateMarkdown(data) {
   # ${data.title}
   ## Decription:
   ${data.description}
-  
+
   ## ${data.instructions}
   ## ${data.usage}
   ${renderLicenseSection(data.license)}

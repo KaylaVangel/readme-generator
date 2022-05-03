@@ -52,9 +52,9 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(licenses) {
   return licenses.map(license => {
-    return `## ${License}
-    ${renderLicenseBadge(license)}
-    ${renderLicenseLink(license)}
+    return `## ${license}
+  ${renderLicenseBadge(license)}
+  ${renderLicenseLink(license)}
   `;
   })
 }
@@ -65,17 +65,17 @@ function generateMarkdown(data) {
 
 
 
-
-
-  return `# ${data.title}
-
-
-
-
-
+  return `
+  # ${data.title}
+  ## Decription:
+  ${data.description}
+  
+  ## ${data.instructions}
+  ## ${data.usage}
   ${renderLicenseSection(data.license)}
-  `
-    ;
-}
+  ## ${data.contribution}
+  ## ${data.tests}
+  ## ${data.questions}`
+};
 
 module.exports = generateMarkdown;

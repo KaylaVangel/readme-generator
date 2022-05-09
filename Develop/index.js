@@ -13,7 +13,7 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'description (Required)',
+            name: 'description',
             message: 'Decribe your project',
         },
         {
@@ -47,6 +47,12 @@ const promptUser = () => {
             name: 'questions',
             message: 'Please enter link for GitHub profile',
         },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Please enter your Email Address',
+        }
+        
     ]);
 };
 

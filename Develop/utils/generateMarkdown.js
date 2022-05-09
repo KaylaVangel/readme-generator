@@ -86,7 +86,9 @@ function generateMarkdown(data) {
   ## Tests: 
   ${data.tests}
   ## Questions??? 
-  ${data.questions}`
+  ${data.questions}
+  
+  ${data.email}`
 };
 
 module.exports = generateMarkdown;

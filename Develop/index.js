@@ -37,11 +37,16 @@ const promptUser = () => {
             message: 'Please include test instructions',
         },
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
             message: 'Please choose the applicable licenses (check all that apply',
             choices: ['MIT', 'Microsoft Public License', 'ISC']
-        }
+        },
+        {
+            type: 'input',
+            name: 'questions',
+            message: 'Please enter link for GitHub profile',
+        },
     ]);
 };
 

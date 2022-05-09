@@ -1,5 +1,5 @@
 
-  # Kayla's ReadMe
+  # Readme Generator
   # Table of Contents:
   - [License](#license)
   - [Description](#description)
@@ -8,22 +8,21 @@
   - [Contribution](#contribution)
   - [Tests](#tests)
   - [Questions](#questions)
-  
   ## License
-  
-  
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+  (https://opensource.org/licenses/MIT)
   
   ## Description:
-  undefined
+  Dynamically generates Readme file from user input
   ## Instructions:
-  inquirer required
+  requires inquirer
   ## Usage:
-  readme
+  ReadmeFile
   ## Contribution:
   just me!
   ## Tests: 
-  tests
+  none for now
   ## Questions??? 
-  https://github.com/KaylaVangel/readme-generator
-  
-  Kayla.vangel@cocmast.net
+  KaylaVangel
+
+  Kayla.vangel@comcast.net

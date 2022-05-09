@@ -73,7 +73,6 @@ function generateMarkdown(data) {
   - [Contribution](#contribution)
   - [Tests](#tests)
   - [Questions](#questions)
-  
   ${renderLicenseSection(data.license)}
   ## Description:
   ${data.description}
@@ -87,7 +86,7 @@ function generateMarkdown(data) {
   ${data.tests}
   ## Questions??? 
   ${data.questions}
-  
+
   ${data.email}`
 };
 
